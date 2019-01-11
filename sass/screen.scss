@@ -1,0 +1,51 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+
+@import "compass/reset";
+
+$abel: 'Abel', sans-serif;
+$andika: 'Andika', sans-serif;
+$jura: 'Jura', sans-serif;
+
+.wrapper{
+	.header{
+		.name_author{
+				display: flex;
+				justify-content: center;
+				h1{
+						padding-top: 60px;
+						text-transform: uppercase;
+						letter-spacing: 0.2em;
+						font-family: $jura;
+						color: rgba(158,158,158,1);
+						font-size: 30px;
+				}
+		}
+		.navigation{
+			padding-top: 20px;
+			.menu_main{
+				display: flex;
+				justify-content: center;
+				.menu_main__sections{
+					margin-right: 2vw;
+					:hover{
+						color: rgba(186,186,186,1);
+						transition: color .5s ease;
+					}
+					a{
+						font-size: 12px;
+						text-decoration: none;
+						color: rgba(0,0,0,1);
+						font-family: $jura;
+						letter-spacing: .1em;
+					}
+				}
+			}
+		}
+	}
+	.owl-carousel{
+		padding-top: 70px;
+	}
+}
