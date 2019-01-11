@@ -4,9 +4,8 @@ $(function() {
     owl.owlCarousel({
       items: 3,
       margin: 10,
-      smartSpeed: 1000,
+      smartSpeed: 500,
       loop: true,
       nav: true,
-      autoplay: true,
     });
   });
