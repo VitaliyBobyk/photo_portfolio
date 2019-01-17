@@ -229,4 +229,17 @@ $jura: 'Jura', sans-serif;
 	.wrapper .sessions_main .sessions_main_clients{
 		width: 100%;
 	}
+	.wrapper .photo_about{
+		flex-direction: column;
+	}
+	.wrapper .photo_about .photo img{
+		width: 75vw;
+	}
+	.wrapper .photo_about .about{
+		width: 75vw;
+	}
+	.wrapper .photo_about .about p{
+		padding-top: 50px;
+		font-size: 3.2vw;
+	}
 }
