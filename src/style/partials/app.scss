@@ -20,6 +20,7 @@ $jura: 'Jura', sans-serif;
 		.navigation{
 			display: flex;
 			justify-content: center;
+			height: 72px;
 			.fixed {
 				width:100%;
 				position: fixed;
@@ -34,9 +35,9 @@ $jura: 'Jura', sans-serif;
 				width:100%;
 				display: flex;
 				justify-content: center;
-				height:40px;
-				top:-40px;
-				transition: top 1.5s ease-out;
+				height:80px;
+				top:-80px;
+				transition: top 2s;
 				.menu_main__sections{
 					margin-right: 2vw;
 					list-style: none;
@@ -212,6 +213,9 @@ $jura: 'Jura', sans-serif;
 	}
 }
 @media screen and (max-width: 500px) {
+	.wrapper .header .name_author h1{
+		font-size: 7vw;
+	}
 	.wrapper .owl-carousel {
 		display: flex;
 		flex-direction: column;
