@@ -3,13 +3,13 @@ $andika: 'Andika', sans-serif;
 $jura: 'Jura', sans-serif;
 
 .wrapper{
+	overflow-x: hidden;
 	.header{
 		.name_author{
 			display: flex;
 			justify-content: center;
 			h1{
 				cursor: pointer;
-				padding-top: 60px;
 				text-transform: uppercase;
 				letter-spacing: 0.2em;
 				font-family: $jura;
@@ -18,10 +18,25 @@ $jura: 'Jura', sans-serif;
 			}
 		}
 		.navigation{
-			padding-top: 20px;
+			display: flex;
+			justify-content: center;
+			.fixed {
+				width:100%;
+				position: fixed;
+				top: 0 !important;
+				background: white;
+				z-index: 2;
+				margin: 0 auto;
+				align-items: center;
+			}
 			.menu_main{
+				padding: 0;
+				width:100%;
 				display: flex;
 				justify-content: center;
+				height:40px;
+				top:-40px;
+				transition: top 1.5s ease-out;
 				.menu_main__sections{
 					margin-right: 2vw;
 					list-style: none;
@@ -41,7 +56,7 @@ $jura: 'Jura', sans-serif;
 		}
 	}
 	.owl-carousel{
-		padding-top: 50px;
+		padding-top: 10px;
 		.owl-nav{
 			position: relative;
 			.owl-next{
@@ -83,12 +98,19 @@ $jura: 'Jura', sans-serif;
 				text-align: center;
 				line-height: 1.7rem;
 				background-color: white;
-				:hover{
-					color: #5ed7db;
-				}
 				a{
 					display: block;
 					text-decoration: none;
+					:hover{
+						background-color: rgb(233,178,56);
+						border: 1px solid rgb(233,178,56);
+						border-radius: 50%;
+						display: flex;
+						justify-content: center;
+						align-items: center;
+						height: 23px;
+						width: 23px;
+					}
 					.fab{
 						color: #cff6f7;
 					}
@@ -105,6 +127,16 @@ $jura: 'Jura', sans-serif;
 				a{
 					display: block;
 					text-decoration: none;
+					:hover{
+						background-color: rgb(233,178,56);
+						border: 1px solid rgb(233,178,56);
+						border-radius: 50%;
+						display: flex;
+						justify-content: center;
+						align-items: center;
+						height: 23px;
+						width: 23px;
+					}
 					.fab{
 						color: #cff6f7;
 					}
@@ -124,5 +156,77 @@ $jura: 'Jura', sans-serif;
 			}
 		}
 	}
+	.sessions_main{
+		max-width: 1920px;
+		margin: 0 auto;
+		display: flex;
+		justify-content: space-around;
+		flex-wrap: wrap;
+		.sessions_main_clients{
+			padding-top: 60px;
+			width: 26vw;
+			.img_clients{
+				text-align: center;
+				a{
+					text-decoration: none;
+					display: inline-block;
+					:hover{
+						color: red;
+						color: rgba(186,186,186,1);
+						transition: color .5s ease;
+					}
+					img{
+						height: 25vw;
+					}
+					p{
+						color:black;
+						font-size: 1.3vw;
+					}
+				}
+			}
+		}
+	}
+	.photo_about{
+		padding-top: 70px;
+		display: flex;
+		justify-content: space-around;
+		margin: 0 auto;
+		width: 75vw;
+		.photo{
+			// width: 30vw;
+			img{
+				width: 32vw;
+			}
+		}
+		.about{
+			margin: 0 auto;
+			width: 35vw;
+			p{
+				margin: 0 auto;
+				line-height: 1.8;
+				font-size: 1.2vw;
+				text-align: justify;
+				font-family: 'Playfair Display', serif;
+			}
+		}
+	}
 }
-  
+@media screen and (max-width: 500px) {
+	.wrapper .owl-carousel {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+	.wrapper .sessions_main{
+		flex-direction: column;
+	}
+	.wrapper .sessions_main .sessions_main_clients .img_clients a img{
+		height: 75vw;
+	}
+	.wrapper .sessions_main .sessions_main_clients .img_clients a p{
+		font-size: 3vw;
+	}
+	.wrapper .sessions_main .sessions_main_clients{
+		width: 100%;
+	}
+}
