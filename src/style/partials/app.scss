@@ -312,6 +312,7 @@ $jura: 'Jura', sans-serif;
 		padding-top: 100px;
 		.img_client_feedback{
 			img{
+				border-radius: 50%;
 				width: 7vw;
 			}
 		}
@@ -343,8 +344,29 @@ $jura: 'Jura', sans-serif;
 }
 
 @media screen and (max-width: 500px) {
+	.wrapper .feedback_section{
+		padding-top: 60px;
+	}
+	.wrapper .feedback_section .img_client_feedback img{
+		width: 10vw;
+	}
+	.wrapper .feedback_section .name_client__feedback p{
+		font-size: 2vw;
+	}
+	.wrapper .feedback_section .feedback{
+		width: 90vw;
+	}
+	.wrapper .feedback_section .feedback p{
+		font-size: 3.5vw;
+	}
 	.wrapper .header .name_author h1{
 		font-size: 7vw;
+	}
+	.wrapper .input_section .inputs .group input{
+		width: 80vw;
+	}
+	.wrapper .input_section .inputs .group .messege{
+		width: 80vw;
 	}
 	.wrapper .owl-carousel {
 		display: flex;
