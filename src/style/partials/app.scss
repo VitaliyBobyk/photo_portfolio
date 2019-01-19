@@ -194,7 +194,6 @@ $jura: 'Jura', sans-serif;
 		margin: 0 auto;
 		width: 75vw;
 		.photo{
-			// width: 30vw;
 			img{
 				width: 32vw;
 			}
@@ -211,7 +210,102 @@ $jura: 'Jura', sans-serif;
 			}
 		}
 	}
+	.contact_info{
+		line-height: 2.2;	
+		letter-spacing: 0.05em;
+		color: rgba(0,0,0,.99);
+		font-family: $jura;
+		margin: 0 auto;
+		text-align: center;
+		font-size: 13px;
+		min-width: 30vw;
+		.post{
+			:hover{
+				color: rgba(186,186,186,1);
+				transition: color .5s ease;	
+			}
+			a{
+				text-decoration: none;
+				color: rgba(0,0,0,.99);
+			}
+		}
+		.number{
+			:hover{
+				color: rgba(186,186,186,1);
+				transition: color .5s ease;
+			}
+			a{
+				text-decoration: none;
+				color: rgba(0,0,0,.99);
+			}
+		}
+	}
+	.input_section{
+		margin: 0 auto;
+		display: flex;
+		justify-content: center;
+		padding-top: 100px;
+		.inputs{
+			font-family: "Arial";
+			display: flex;
+			flex-direction: column;
+			letter-spacing: 0.45em;
+			.group{ 
+				position:relative; 
+				padding-bottom: 25px; 
+				textarea{
+					resize: none;
+					padding: 22px 10px 10px 24px;
+					letter-spacing: 0.45em;
+					padding-left: 24px;
+					font-size: 12px;
+					min-width: 50vw;
+					height: 53px;
+  					display:block;
+					border:none;
+					  border:1px solid rgba(224, 224, 224, 1);
+				}
+				input{
+					padding: 22px 10px 10px 24px;
+					letter-spacing: 0.45em;
+					padding-left: 24px;
+					font-size: 12px;
+					min-width: 50vw;
+					height: 53px;
+  					display:block;
+					border:none;
+					  border:1px solid rgba(224, 224, 224, 1);
+				}
+				.messege{
+					height: 100px;
+					line-height: 22px;
+					padding-bottom: 65px;
+					overflow:scroll;
+				}
+			}
+		}
+		.button_send{
+			width: 100%;
+			height: 50px;
+			background-color: black;
+			text-align: center;
+			line-height: 50px;
+			:hover{
+				background-color: rgba(186,186,186,1);
+				transition: background-color .5s ease;
+			}
+			a{
+				text-decoration: none;
+				color: white;
+				display: block;
+				letter-spacing: 1.5px;
+				font-family: Arial;
+				font-size: 11px;
+			}
+		}
+	}
 }
+
 @media screen and (max-width: 500px) {
 	.wrapper .header .name_author h1{
 		font-size: 7vw;

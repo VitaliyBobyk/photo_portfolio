@@ -1,0 +1,27 @@
+* { box-sizing:border-box; }
+input:focus { outline:none; }
+textarea:focus { outline:none; }
+
+/* LABEL ======================================= */
+label 				 {
+  color: black;
+  font-size: 12px;
+  font-weight:normal;
+  position:absolute;
+  pointer-events:none;
+  left:25px;
+  top:20px;
+  transition:0.2s ease all; 
+  -moz-transition:0.2s ease all; 
+  -webkit-transition:0.2s ease all;
+}
+
+/* active state */
+input:focus ~ label, input:valid ~ label 		{
+  top:10px;
+  font-size:8px;
+}
+textarea:focus ~ label, input:valid ~ label 		{
+  top:10px;
+  font-size:8px;
+}
