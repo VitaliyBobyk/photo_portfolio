@@ -5,6 +5,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "ajax": "0.0.4",
     "browser-sync": "^2.2.3",
     "gulp": "^3.9.1",
     "gulp-autoprefixer": "^2.1.0",

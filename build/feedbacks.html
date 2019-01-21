@@ -14,32 +14,34 @@
 </head>
 <body>
     <div class="wrapper">
+        <!-- //= template/header.html -->
+        <div id="content">
         <div class="header">    
             <div class="name_author">
                 <h1>Olya Kotyk</h1>
             </div>
             <div class="navigation">
                 <ul class="menu_main">
-                    <li class="menu_main__sections"><a href="index.html">portfolio</a></li>
-                    <li class="menu_main__sections"><a href="sessions.html">sessions</a></li>
-                    <li class="menu_main__sections"><a href="info.html">info</a></li>
-                    <li class="menu_main__sections"><a href="contacts.html">contacts</a</li>
-                    <li class="menu_main__sections"><a href="feedbacks.html">feedback</a></li>
+                    <li class="menu_main__sections"><a href="#" onClick="showContent('index.html')">portfolio</a></li>
+                    <li class="menu_main__sections"><a href="#" onClick="showContent('sessions.html')">sessions</a></li>
+                    <li class="menu_main__sections"><a href="#" onClick="showContent('info.html')">info</a></li>
+                    <li class="menu_main__sections"><a href="#" onClick="showContent('contacts.html')">contacts</a</li>
+                    <li class="menu_main__sections"><a href="#" onClick="showContent('feedbacks.html')">feedback</a></li>
                 </ul>
             </div>
         </div>
-        <div class="feedback_section">
-            <div class="img_client_feedback">
-                <img src="img/download-5.jpg" alt="client">
+            <div class="feedback_section">
+                <div class="img_client_feedback">
+                    <img src="img/download-5.jpg" alt="client">
+                </div>
+                <div class="name_client__feedback">
+                    <p>Martina and Marcus, St.Pölten, Austria .September 2018</p>
+                </div>
+                <div class="feedback">
+                    <p>Who doesn't dream of the perfect wedding photos? We have thought a lot about the perfect wedding photographer and are more than happy with our decision to book Igor for our wonderful day! He took the time to meet with us in advance, and he was totally attentive and helpful and really helped us to relax and have the best day of our lives. His pictures are wonderful, great and full of love! The memories will cheerish you forever. If you are considering booking Igor for your wedding, DO IT!  You won't regret it.</p>
+                </div>
             </div>
-            <div class="name_client__feedback">
-                <p>Martina and Marcus, St.Pölten, Austria .September 2018</p>
-            </div>
-            <div class="feedback">
-                <p>Who doesn't dream of the perfect wedding photos? We have thought a lot about the perfect wedding photographer and are more than happy with our decision to book Igor for our wonderful day! He took the time to meet with us in advance, and he was totally attentive and helpful and really helped us to relax and have the best day of our lives. His pictures are wonderful, great and full of love! The memories will cheerish you forever. If you are considering booking Igor for your wedding, DO IT!  You won't regret it.</p>
-            </div>
-        </div>
-        <div class="feedback_section">
+            <div class="feedback_section">
                 <div class="img_client_feedback">
                     <img src="img/download-2.jpg" alt="client">
                 </div>
@@ -50,19 +52,23 @@
                     <p>We had such a pleasant experience with Igor and his Videography associate. He produced images and a video of our wedding ceremony that brought me to tears. He was very easy to work with, was good with direction and seemed to have a passion for capturing the emotion that was shared that day. I will forever be grateful for him and the memories he provided for me. If you're considering hiring Igor, he is highly recommended by my family and I.</br>Kat Caraway, Bride</p>
                 </div>
             </div>
-        <div class="footer_section">
-            <div class="social">
-                <div class="instagram">
-                        <a href="https://www.instagram.com/somelook_ok" target="_blank"><i class="fab fa-instagram"></i></a>
+            <div class="footer_section">
+                <div class="social">
+                    <div class="instagram">
+                            <a href="https://www.instagram.com/somelook_ok" target="_blank"><i class="fab fa-instagram"></i></a>
+                    </div>
+                    <div class="facebook">
+                            <a href="https://www.facebook.com/olya.kotyk.1" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                    </div>
                 </div>
-                <div class="facebook">
-                        <a href="https://www.facebook.com/olya.kotyk.1" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                <div class="made_by">
+                    <a href="https://github.com/VitaliyBobyk" target="_blank">made by Vitaliy Bobyk</a>
                 </div>
-            </div>
-            <div class="made_by">
-                <a href="https://github.com/VitaliyBobyk" target="_blank">made by Vitaliy Bobyk</a>
             </div>
         </div>
+        <div id="loading" style="display: none"> 
+        </div>
+        <!-- //= template/footer.html -->
     </div>
     <script src="js/main.js"></script>
 </body>

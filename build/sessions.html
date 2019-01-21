@@ -12,50 +12,56 @@
 </head>
 <body>
     <div class="wrapper">
-        <div class="header">    
-            <div class="name_author">
-                <h1>Olya Kotyk</h1>
+        <!-- //= template/header.html -->
+        <div id="content">
+            <div class="header">    
+                <div class="name_author">
+                    <h1>Olya Kotyk</h1>
+                </div>
+                <div class="navigation">
+                    <ul class="menu_main">
+                        <li class="menu_main__sections"><a href="#" onClick="showContent('index.html')">portfolio</a></li>
+                        <li class="menu_main__sections"><a href="#" onClick="showContent('sessions.html')">sessions</a></li>
+                        <li class="menu_main__sections"><a href="#" onClick="showContent('info.html')">info</a></li>
+                        <li class="menu_main__sections"><a href="#" onClick="showContent('contacts.html')">contacts</a</li>
+                        <li class="menu_main__sections"><a href="#" onClick="showContent('feedbacks.html')">feedback</a></li>
+                    </ul>
+                </div>
             </div>
-            <div class="navigation">
-                <ul class="menu_main">
-                    <li class="menu_main__sections"><a href="index.html">portfolio</a></li>
-                    <li class="menu_main__sections"><a href="sessions.html">sessions</a></li>
-                    <li class="menu_main__sections"><a href="info.html">info</a></li>
-                    <li class="menu_main__sections"><a href="contacts.html">contacts</a</li>
-                    <li class="menu_main__sections"><a href="feedbacks.html">feedback</a></li>
-                </ul>
+            <div class="sessions_main">
+                <div class="sessions_main_clients">
+                    <div class="img_clients">
+                        <a href="#"><img src="img/download-5.jpg" alt=""><p>Lorem, ipsum dolor sit amet consectetur</p></a>
+                    </div>
+                </div>
+                <div class="sessions_main_clients">
+                    <div class="img_clients">
+                        <a href="#"><img src="img/download-4.jpg" alt=""><p>Lorem, ipsum dolor sit amet consectetur</p></a>
+                    </div>
+                </div>
+                <div class="sessions_main_clients">
+                    <div class="img_clients">
+                        <a href="#"><img src="img/download-3.jpg" alt=""><p>Lorem, ipsum dolor sit amet consectetur</p></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer_section">
+                <div class="social">
+                    <div class="instagram">
+                            <a href="https://www.instagram.com/somelook_ok" target="_blank"><i class="fab fa-instagram"></i></a>
+                    </div>
+                    <div class="facebook">
+                            <a href="https://www.facebook.com/olya.kotyk.1" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                    </div>
+                </div>
+                <div class="made_by">
+                    <a href="https://github.com/VitaliyBobyk" target="_blank">made by Vitaliy Bobyk</a>
+                </div>
             </div>
         </div>
-        <div class="sessions_main">
-            <div class="sessions_main_clients">
-                <div class="img_clients">
-                    <a href="#"><img src="img/download-5.jpg" alt=""><p>Lorem, ipsum dolor sit amet consectetur</p></a>
-                </div>
-            </div>
-            <div class="sessions_main_clients">
-                <div class="img_clients">
-                    <a href="#"><img src="img/download-4.jpg" alt=""><p>Lorem, ipsum dolor sit amet consectetur</p></a>
-                </div>
-            </div>
-            <div class="sessions_main_clients">
-                <div class="img_clients">
-                    <a href="#"><img src="img/download-3.jpg" alt=""><p>Lorem, ipsum dolor sit amet consectetur</p></a>
-                </div>
-            </div>
+        <div id="loading" style="display: none"> 
         </div>
-        <div class="footer_section">
-            <div class="social">
-                <div class="instagram">
-                        <a href="https://www.instagram.com/somelook_ok" target="_blank"><i class="fab fa-instagram"></i></a>
-                </div>
-                <div class="facebook">
-                        <a href="https://www.facebook.com/olya.kotyk.1" target="_blank"><i class="fab fa-facebook-f"></i></a>
-                </div>
-            </div>
-            <div class="made_by">
-                <a href="https://github.com/VitaliyBobyk" target="_blank">made by Vitaliy Bobyk</a>
-            </div>
-        </div>
+        <!-- //= template/footer.html -->
     </div>
     <script src="js/main.js"></script>
 </body>

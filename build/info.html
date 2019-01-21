@@ -13,41 +13,47 @@
 </head>
 <body>
     <div class="wrapper">
-        <div class="header">    
-            <div class="name_author">
-                <h1>Olya Kotyk</h1>
-            </div>
-            <div class="navigation">
-                <ul class="menu_main">
-                    <li class="menu_main__sections"><a href="index.html">portfolio</a></li>
-                    <li class="menu_main__sections"><a href="sessions.html">sessions</a></li>
-                    <li class="menu_main__sections"><a href="info.html">info</a></li>
-                    <li class="menu_main__sections"><a href="contacts.html">contacts</a</li>
-                    <li class="menu_main__sections"><a href="feedbacks.html">feedback</a></li>
-                </ul>
-            </div>
-        </div>
-        <div class="photo_about">
-            <div class="photo">
-                <img src="img/mulove.jpeg" alt="OWNER">
-            </div>
-            <div class="about">
-                <p>Hello, my name is Igor and I am glad to welcome you at my website. Photography is probably on the second place for me, standing down only to my wife and a baby who I live with in the very heart of Europe. As a true admirer of a unique shot, I am not afraid of boarders separating countries, far distances, off roads, heights or bad weather and my portfolio proves that. Naturalness, harmony, and nontrivialty of the photograph is what appeals to me the most. I  also  enjoy  travelling and spending  time with  frank people. And if to photograph frank people while travelling, then, the result is splendid; proved with my own experience) And if to be completely serious, I consider development to be the main investment: striving for the perfect style, pleasant combination of shapes and shades, capable of creating not just a photo but whole photo art. If you liked my photos, I am always pleased to help you.</p>
-            </div>
-        </div>
-        <div class="footer_section">
-            <div class="social">
-                <div class="instagram">
-                        <a href="https://www.instagram.com/somelook_ok" target="_blank"><i class="fab fa-instagram"></i></a>
+        <!-- //= template/header.html -->
+        <div id="content">
+            <div class="header">    
+                <div class="name_author">
+                    <h1>Olya Kotyk</h1>
                 </div>
-                <div class="facebook">
-                        <a href="https://www.facebook.com/olya.kotyk.1" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                <div class="navigation">
+                    <ul class="menu_main">
+                        <li class="menu_main__sections"><a href="#" onClick="showContent('index.html')">portfolio</a></li>
+                        <li class="menu_main__sections"><a href="#" onClick="showContent('sessions.html')">sessions</a></li>
+                        <li class="menu_main__sections"><a href="#" onClick="showContent('info.html')">info</a></li>
+                        <li class="menu_main__sections"><a href="#" onClick="showContent('contacts.html')">contacts</a</li>
+                        <li class="menu_main__sections"><a href="#" onClick="showContent('feedbacks.html')">feedback</a></li>
+                    </ul>
                 </div>
             </div>
-            <div class="made_by">
-                <a href="https://github.com/VitaliyBobyk" target="_blank">made by Vitaliy Bobyk</a>
+            <div class="photo_about">
+                <div class="photo">
+                    <img src="img/mulove.jpeg" alt="OWNER">
+                </div>
+                <div class="about">
+                    <p>Hello, my name is Igor and I am glad to welcome you at my website. Photography is probably on the second place for me, standing down only to my wife and a baby who I live with in the very heart of Europe. As a true admirer of a unique shot, I am not afraid of boarders separating countries, far distances, off roads, heights or bad weather and my portfolio proves that. Naturalness, harmony, and nontrivialty of the photograph is what appeals to me the most. I  also  enjoy  travelling and spending  time with  frank people. And if to photograph frank people while travelling, then, the result is splendid; proved with my own experience) And if to be completely serious, I consider development to be the main investment: striving for the perfect style, pleasant combination of shapes and shades, capable of creating not just a photo but whole photo art. If you liked my photos, I am always pleased to help you.</p>
+                </div>
+            </div>
+            <div class="footer_section">
+                <div class="social">
+                    <div class="instagram">
+                            <a href="https://www.instagram.com/somelook_ok" target="_blank"><i class="fab fa-instagram"></i></a>
+                    </div>
+                    <div class="facebook">
+                            <a href="https://www.facebook.com/olya.kotyk.1" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                    </div>
+                </div>
+                <div class="made_by">
+                    <a href="https://github.com/VitaliyBobyk" target="_blank">made by Vitaliy Bobyk</a>
+                </div>
             </div>
         </div>
+        <div id="loading" style="display: none"> 
+        </div>
+        <!-- //= template/footer.html -->
     </div>
     <script src="js/main.js"></script>
 </body>

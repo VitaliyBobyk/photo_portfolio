@@ -13,73 +13,79 @@
 </head>
 <body>
     <div class="wrapper">
-        <div class="header">    
-            <div class="name_author">
-                <h1>Olya Kotyk</h1>
-            </div>
-            <div class="navigation">
-                <ul class="menu_main">
-                    <li class="menu_main__sections"><a href="index.html">portfolio</a></li>
-                    <li class="menu_main__sections"><a href="sessions.html">sessions</a></li>
-                    <li class="menu_main__sections"><a href="info.html">info</a></li>
-                    <li class="menu_main__sections"><a href="contacts.html">contacts</a</li>
-                    <li class="menu_main__sections"><a href="feedbacks.html">feedback</a></li>
-                </ul>
-            </div>
-        </div>
-        <div class="contact_info">
-            <p>For more information about pricing and other please fill contact or email me at</p>
-            <div class="post"><a href="mailto:falcone159357bv@gmail.com">falcone159357bv@gmail.com</a>
-            </div>
-                <p>We are based between Vienna and Salzburg, and we provide our services all over the world </p>
-            <div class="number">WhatsApp/Viber
-                <a href="tel:+380979119578">+380 97 911 95 78</a> 
-            </div>
-        </div>
-        <div class="input_section">
-            <form action="#">
-                <div class="inputs">
-                    <div class="group">      
-                        <input type="text" required>
-                        <span class="highlight"></span>
-                        <span class="bar"></span>
-                        <label>Your name *</label>
-                    </div>
-                    <div class="group">      
-                        <input type="text" required>
-                        <span class="highlight"></span>
-                        <span class="bar"></span>
-                        <label>Event date</label>
-                    </div>
-                    <div class="group">      
-                        <input type="text" required>
-                        <span class="highlight"></span>
-                        <span class="bar"></span>
-                        <label>Your e-mail *</label>
-                    </div>
-                    <div class="group">      
-                        <textarea class="messege"></textarea>
-                        <span class="highlight"></span>
-                        <span class="bar"></span>
-                        <label>Messege *</label>
-                    </div>
+        <!-- //= template/header.html -->
+        <div id="content">
+            <div class="header">    
+                <div class="name_author">
+                    <h1>Olya Kotyk</h1>
                 </div>
-                <div class="button_send"><a href="#">Send</a></div>
-            </form>
-        </div>
-        <div class="footer_section">
-            <div class="social">
-                <div class="instagram">
-                        <a href="https://www.instagram.com/somelook_ok" target="_blank"><i class="fab fa-instagram"></i></a>
-                </div>
-                <div class="facebook">
-                        <a href="https://www.facebook.com/olya.kotyk.1" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                <div class="navigation">
+                    <ul class="menu_main">
+                        <li class="menu_main__sections"><a href="#" onClick="showContent('index.html')">portfolio</a></li>
+                        <li class="menu_main__sections"><a href="#" onClick="showContent('sessions.html')">sessions</a></li>
+                        <li class="menu_main__sections"><a href="#" onClick="showContent('info.html')">info</a></li>
+                        <li class="menu_main__sections"><a href="#" onClick="showContent('contacts.html')">contacts</a</li>
+                        <li class="menu_main__sections"><a href="#" onClick="showContent('feedbacks.html')">feedback</a></li>
+                    </ul>
                 </div>
             </div>
-            <div class="made_by">
-                <a href="https://github.com/VitaliyBobyk" target="_blank">made by Vitaliy Bobyk</a>
+            <div class="contact_info">
+                <p>For more information about pricing and other please fill contact or email me at</p>
+                <div class="post"><a href="mailto:falcone159357bv@gmail.com">falcone159357bv@gmail.com</a>
+                </div>
+                    <p>We are based between Vienna and Salzburg, and we provide our services all over the world </p>
+                <div class="number">WhatsApp/Viber
+                    <a href="tel:+380979119578">+380 97 911 95 78</a> 
+                </div>
+            </div>
+            <div class="input_section">
+                <form action="#">
+                    <div class="inputs">
+                        <div class="group">      
+                            <input type="text" required>
+                            <span class="highlight"></span>
+                            <span class="bar"></span>
+                            <label>Your name *</label>
+                        </div>
+                        <div class="group">      
+                            <input type="text" required>
+                            <span class="highlight"></span>
+                            <span class="bar"></span>
+                            <label>Event date</label>
+                        </div>
+                        <div class="group">      
+                            <input type="text" required>
+                            <span class="highlight"></span>
+                            <span class="bar"></span>
+                            <label>Your e-mail *</label>
+                        </div>
+                        <div class="group">      
+                            <textarea class="messege"></textarea>
+                            <span class="highlight"></span>
+                            <span class="bar"></span>
+                            <label>Messege *</label>
+                        </div>
+                    </div>
+                    <div class="button_send"><a href="#">Send</a></div>
+                </form>
+            </div>
+            <div class="footer_section">
+                <div class="social">
+                    <div class="instagram">
+                            <a href="https://www.instagram.com/somelook_ok" target="_blank"><i class="fab fa-instagram"></i></a>
+                    </div>
+                    <div class="facebook">
+                            <a href="https://www.facebook.com/olya.kotyk.1" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                    </div>
+                </div>
+                <div class="made_by">
+                    <a href="https://github.com/VitaliyBobyk" target="_blank">made by Vitaliy Bobyk</a>
+                </div>
             </div>
         </div>
+        <div id="loading" style="display: none"> 
+        </div> 
+        <!-- //= template/footer.html -->
     </div>
     <script src="js/main.js"></script>
 </body>

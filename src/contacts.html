@@ -13,48 +13,54 @@
 </head>
 <body>
     <div class="wrapper">
-        //= template/header.html
-        <div class="contact_info">
-            <p>For more information about pricing and other please fill contact or email me at</p>
-            <div class="post"><a href="mailto:falcone159357bv@gmail.com">falcone159357bv@gmail.com</a>
-            </div>
-                <p>We are based between Vienna and Salzburg, and we provide our services all over the world </p>
-            <div class="number">WhatsApp/Viber
-                <a href="tel:+380979119578">+380 97 911 95 78</a> 
-            </div>
-        </div>
-        <div class="input_section">
-            <form action="#">
-                <div class="inputs">
-                    <div class="group">      
-                        <input type="text" required>
-                        <span class="highlight"></span>
-                        <span class="bar"></span>
-                        <label>Your name *</label>
-                    </div>
-                    <div class="group">      
-                        <input type="text" required>
-                        <span class="highlight"></span>
-                        <span class="bar"></span>
-                        <label>Event date</label>
-                    </div>
-                    <div class="group">      
-                        <input type="text" required>
-                        <span class="highlight"></span>
-                        <span class="bar"></span>
-                        <label>Your e-mail *</label>
-                    </div>
-                    <div class="group">      
-                        <textarea class="messege"></textarea>
-                        <span class="highlight"></span>
-                        <span class="bar"></span>
-                        <label>Messege *</label>
-                    </div>
+        <!-- //= template/header.html -->
+        <div id="content">
+            //= template/header.html
+            <div class="contact_info">
+                <p>For more information about pricing and other please fill contact or email me at</p>
+                <div class="post"><a href="mailto:falcone159357bv@gmail.com">falcone159357bv@gmail.com</a>
                 </div>
-                <div class="button_send"><a href="#">Send</a></div>
-            </form>
+                    <p>We are based between Vienna and Salzburg, and we provide our services all over the world </p>
+                <div class="number">WhatsApp/Viber
+                    <a href="tel:+380979119578">+380 97 911 95 78</a> 
+                </div>
+            </div>
+            <div class="input_section">
+                <form action="#">
+                    <div class="inputs">
+                        <div class="group">      
+                            <input type="text" required>
+                            <span class="highlight"></span>
+                            <span class="bar"></span>
+                            <label>Your name *</label>
+                        </div>
+                        <div class="group">      
+                            <input type="text" required>
+                            <span class="highlight"></span>
+                            <span class="bar"></span>
+                            <label>Event date</label>
+                        </div>
+                        <div class="group">      
+                            <input type="text" required>
+                            <span class="highlight"></span>
+                            <span class="bar"></span>
+                            <label>Your e-mail *</label>
+                        </div>
+                        <div class="group">      
+                            <textarea class="messege"></textarea>
+                            <span class="highlight"></span>
+                            <span class="bar"></span>
+                            <label>Messege *</label>
+                        </div>
+                    </div>
+                    <div class="button_send"><a href="#">Send</a></div>
+                </form>
+            </div>
+            //= template/footer.html
         </div>
-        //= template/footer.html
+        <div id="loading" style="display: none"> 
+        </div> 
+        <!-- //= template/footer.html -->
     </div>
     <script src="js/main.js"></script>
 </body>
