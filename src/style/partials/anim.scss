@@ -17,11 +17,11 @@ label 				 {
 }
 
 /* active state */
-input:focus ~ label, input:valid ~ label 		{
+input:focus ~ label, input:valid ~ label{
   top:10px;
   font-size:8px;
 }
-textarea:focus ~ label, input:valid ~ label 		{
+textarea:focus ~ label, input:valid ~ label{
   top:10px;
   font-size:8px;
 }

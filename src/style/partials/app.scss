@@ -253,7 +253,7 @@ $jura: 'Jura', sans-serif;
 			.group{ 
 				position:relative; 
 				padding-bottom: 25px; 
-				input{
+				input,textarea{
 					padding: 22px 10px 10px 24px;
 					letter-spacing: 0.45em;
 					padding-left: 24px;
@@ -263,6 +263,10 @@ $jura: 'Jura', sans-serif;
   					display:block;
 					border:none;
 					border:1px solid rgba(224, 224, 224, 1);
+				}
+				textarea{
+					resize: none;
+					height: 150px;
 				}
 			}
 			.submit_button{
