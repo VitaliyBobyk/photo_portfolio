@@ -10,3 +10,4 @@
 //= partials/app.js
 //= partials/menu.js
 //= partials/reload.js
+//= partials/valid.js

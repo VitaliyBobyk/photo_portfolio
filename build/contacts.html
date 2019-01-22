@@ -13,7 +13,6 @@
 </head>
 <body>
     <div class="wrapper">
-        <!-- //= template/header.html -->
         <div id="content">
             <div class="header">    
                 <div class="name_author">
@@ -21,11 +20,11 @@
                 </div>
                 <div class="navigation">
                     <ul class="menu_main">
-                        <li class="menu_main__sections"><a href="#" onClick="showContent('index.html')">portfolio</a></li>
-                        <li class="menu_main__sections"><a href="#" onClick="showContent('sessions.html')">sessions</a></li>
-                        <li class="menu_main__sections"><a href="#" onClick="showContent('info.html')">info</a></li>
-                        <li class="menu_main__sections"><a href="#" onClick="showContent('contacts.html')">contacts</a</li>
-                        <li class="menu_main__sections"><a href="#" onClick="showContent('feedbacks.html')">feedback</a></li>
+                        <li class="menu_main__sections"><a href="index.html">portfolio</a></li>
+                        <li class="menu_main__sections"><a href="sessions.html">sessions</a></li>
+                        <li class="menu_main__sections"><a href="info.html">info</a></li>
+                        <li class="menu_main__sections"><a href="contacts.html">contacts</a</li>
+                        <li class="menu_main__sections"><a href="feedbacks.html">feedback</a></li>
                     </ul>
                 </div>
             </div>
@@ -39,34 +38,38 @@
                 </div>
             </div>
             <div class="input_section">
-                <form action="#">
-                    <div class="inputs">
-                        <div class="group">      
-                            <input type="text" required>
+                <form class="gform pure-form pure-form-stacked" method="POST" data-email="falcone159357bv@gmail.com"  action="https://script.google.com/macros/s/AKfycbwP55mURQ-5qIpwh0F0cb7dF5y-nk-K8puNhp94W7H9OTbOqEg/exec">
+                    <div class="inputs form-elements">
+                        <div class="group pure-group">      
+                            <input type="text" name="name" required>
                             <span class="highlight"></span>
                             <span class="bar"></span>
                             <label>Your name *</label>
                         </div>
-                        <div class="group">      
-                            <input type="text" required>
+                        <div class="group pure-group">      
+                            <input type="text" name="message" required>
                             <span class="highlight"></span>
                             <span class="bar"></span>
                             <label>Event date</label>
                         </div>
-                        <div class="group">      
-                            <input type="text" required>
+                        <div class="group pure-group">      
+                            <input id="email" type="email" name="email"required>
                             <span class="highlight"></span>
                             <span class="bar"></span>
                             <label>Your e-mail *</label>
                         </div>
-                        <div class="group">      
-                            <textarea class="messege"></textarea>
+                        <div class="group pure-group">      
+                            <input type="text" name="subject"required>
                             <span class="highlight"></span>
                             <span class="bar"></span>
-                            <label>Messege *</label>
+                            <label>Your phone</label>
                         </div>
+                        <input class="submit_button pure-button" type="submit" value="Send">
                     </div>
-                    <div class="button_send"><a href="#">Send</a></div>
+                    <div style="display:none" class="thankyou_message">
+                        <h2><em>Thanks</em> for contacting us! We will get back to you soon!
+                        </h2>
+                    </div>
                 </form>
             </div>
             <div class="footer_section">
@@ -85,7 +88,6 @@
         </div>
         <div id="loading" style="display: none"> 
         </div> 
-        <!-- //= template/footer.html -->
     </div>
     <script src="js/main.js"></script>
 </body>
