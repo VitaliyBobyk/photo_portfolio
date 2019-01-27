@@ -57,7 +57,12 @@ $jura: 'Jura', sans-serif;
 		}
 	}
 	.owl-carousel{
-		padding-top: 10px;
+		margin-top: 30px;
+		.owl-item{
+			img{
+				height: 33vw;
+			}
+		}
 		.owl-nav{
 			position: relative;
 			.owl-next{
@@ -81,9 +86,9 @@ $jura: 'Jura', sans-serif;
 		}
 	}
 	.footer_section{
-		margin-top: 50px;
 		background-color: rgb(224, 224, 224);
 		height: 10rem;
+		margin-top: 100px;
 		.social{
 			width: 5rem;
 			margin: 0 auto;
@@ -165,7 +170,6 @@ $jura: 'Jura', sans-serif;
 		flex-wrap: wrap;
 		.sessions_main_clients{
 			padding-top: 60px;
-			width: 26vw;
 			.img_clients{
 				text-align: center;
 				a{
@@ -177,6 +181,7 @@ $jura: 'Jura', sans-serif;
 						transition: color .5s ease;
 					}
 					img{
+						// width: 100%;
 						height: 25vw;
 					}
 					p{
@@ -195,7 +200,7 @@ $jura: 'Jura', sans-serif;
 		width: 75vw;
 		.photo{
 			img{
-				width: 32vw;
+				// width: 32vw;
 			}
 		}
 		.about{
@@ -265,6 +270,7 @@ $jura: 'Jura', sans-serif;
 					border:1px solid rgba(224, 224, 224, 1);
 				}
 				textarea{
+					width: 100%;
 					resize: none;
 					height: 150px;
 				}
@@ -334,6 +340,12 @@ $jura: 'Jura', sans-serif;
 }
 
 @media screen and (max-width: 500px) {
+	.owl-carousel img{ 
+		width: 80vw;
+	}
+	.owl-carousel div{ 
+		margin-top: 30px;
+	}
 	.wrapper .header .navigation .menu_main .menu_main__sections a{
 		font-size: 10px;
 	}
