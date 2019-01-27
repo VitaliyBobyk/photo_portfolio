@@ -85,7 +85,6 @@ gulp.task('image:build', function () {
             progressive: true,
             svgoPlugins: [{removeViewBox: false}],
             use: [pngquant()],
-            optimizationLevel: 7,
             interlaced: true
         }))
         .pipe(gulp.dest(path.build.img)) //И бросим в build
