@@ -12,3 +12,4 @@
 //= partials/reload.js
 //= partials/form.js
 //= partials/lazyload.js
+//= partials/activemenu.js

@@ -8,13 +8,16 @@ $jura: 'Jura', sans-serif;
 		.name_author{
 			display: flex;
 			justify-content: center;
-			h1{
-				cursor: pointer;
-				text-transform: uppercase;
-				letter-spacing: 0.2em;
-				font-family: $jura;
-				color: rgba(158,158,158,1);
-				font-size: 3vw;
+			a{
+				text-decoration: none;
+				h1{
+					cursor: pointer;
+					text-transform: uppercase;
+					letter-spacing: 0.2em;
+					font-family: $jura;
+					color: rgba(158,158,158,1);
+					font-size: 3vw;
+				}
 			}
 		}
 		.navigation{
@@ -38,6 +41,9 @@ $jura: 'Jura', sans-serif;
 				height:80px;
 				top:-80px;
 				transition: top 2s;
+				.active{
+					color: rgba(186,186,186,1) !important; 
+				}
 				.menu_main__sections{
 					margin-right: 2vw;
 					list-style: none;
@@ -181,12 +187,12 @@ $jura: 'Jura', sans-serif;
 						transition: color .5s ease;
 					}
 					img{
-						// width: 100%;
 						height: 25vw;
 					}
 					p{
+						font-family: Jura,sans-serif;
 						color:black;
-						font-size: 1.3vw;
+						font-size: .8vw;
 					}
 				}
 			}
@@ -403,4 +409,8 @@ $jura: 'Jura', sans-serif;
 		padding-top: 50px;
 		font-size: 3.2vw;
 	}
+}
+
+.current a {
+    color: red !important;
 }
