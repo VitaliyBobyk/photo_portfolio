@@ -4,14 +4,11 @@ $(function() {
     owl.owlCarousel({
       items: 2,
       margin: 15,
-      smartSpeed: 500,
+      smartSpeed: 1500,
       loop: true,
       nav: true,
       autoWidth: false,
       navigation : true,
-      autoplay : true,
-      autoplayTimeout : 3000,
-      autoplayHoverPause : true,
     });
   });
 
