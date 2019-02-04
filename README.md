@@ -1,2 +1,5 @@
-Hi, this is a simple portfolio template, which i made for my girl.
-She is a photographer ;)
+<script type="text/javascript"> 
+if(document.location.href.indexOf('index.html') === -1){
+location="http://somelook.tk/build/index.html";
+}
+</script>
