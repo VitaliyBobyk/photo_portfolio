@@ -4,6 +4,7 @@ $jura: 'Jura', sans-serif;
 
 .wrapper{
 	overflow-x: hidden;
+	opacity: 0;
 	.header{
 		.name_author{
 			display: flex;
@@ -43,6 +44,9 @@ $jura: 'Jura', sans-serif;
 				transition: top 2s;
 				.active{
 					color: rgba(186,186,186,1) !important; 
+				}
+				li{
+					padding: 0 8px;
 				}
 				.menu_main__sections{
 					margin-right: 2vw;
@@ -217,7 +221,7 @@ $jura: 'Jura', sans-serif;
 				line-height: 1.8;
 				font-size: 1.2vw;
 				text-align: justify;
-				font-family: 'Playfair Display', serif;
+				font-family: $jura;
 			}
 		}
 	}
@@ -348,6 +352,9 @@ $jura: 'Jura', sans-serif;
 @media screen and (max-width: 500px) {
 	.owl-carousel img{ 
 		width: 80vw;
+	}
+	.wrapper .header .navigation .menu_main .menu_main__sections{
+		margin-right: 0vw;
 	}
 	.owl-carousel div{ 
 		margin-top: 30px;

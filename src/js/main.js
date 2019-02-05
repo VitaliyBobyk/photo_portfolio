@@ -13,3 +13,4 @@
 //= partials/form.js
 //= partials/lazyload.js
 //= partials/activemenu.js
+//= partials/preloader.js
