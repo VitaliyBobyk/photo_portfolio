@@ -7,7 +7,7 @@
 /*
  * Custom
  */
-//= partials/app.js
+//= partials/owl.js
 //= partials/menu.js
 //= partials/form.js
 //= partials/lazyload.js

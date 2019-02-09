@@ -67,12 +67,15 @@
 	}
 }
 .wrapper .feedback_section .name_client__feedback p{
-	font-size: 4vw;
+	font-size: 2vw;
 }
 .wrapper .feedback_section .img_client_feedback img{
-	width: 15vw;
+	width: 10vw;
 }
 .wrapper .sessions_main .sessions_main_clients .img_clients{
 	display: flex;
     justify-content: center;
+}
+.wrapper .header .name_author{
+	padding-top: 20px;
 }
